@@ -14,7 +14,13 @@ body {
 }
 
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 250px) {
+    :root {
+        font-size: 12px;
+    }
+}
+
+@media screen and (min-width: 250px) {
     :root {
         font-size: 16px;
     }
@@ -46,7 +52,7 @@ body {
     height: 2.5rem;
     padding: 1.125rem;
     background: #BDE0FE;
-    border: 1px solid #000;
+    border: 0.06rem solid #000;
 
     display: flex;
 
@@ -70,7 +76,7 @@ body {
 }
 
 .navAboutMe {
-    border: 1px solid #000;
+    border: 0.06rem solid #000;
     background: #FDFD96;
     color: #F3859F;
     font-size: 1.18869rem;
@@ -89,4 +95,33 @@ body {
     position: sticky;
     width: auto;
     top: 0;
+}
+
+.introductionContainer {
+    background-color: #FDFD96;
+    border-right: 0.06rem solid #000;
+    border-bottom: 0.06rem solid #000;
+    border-left: 0.06rem solid #000;
+}
+
+.introTextContainer {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+
+    padding: 3rem 0 31vh 1.44rem;
+    color: #000;
+}
+
+.introTextOne {
+    font-size: 2.1875rem;
+}
+
+.introTextTwo {
+    color: #000;
+    font-size: 3.75rem;
+}
+
+.introSubText {
+    font-size: 1.5rem;
 }
