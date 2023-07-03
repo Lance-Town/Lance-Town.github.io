@@ -1,0 +1,92 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    font-family: Inter;
+    font-style: normal;
+}
+
+body {
+    background: #FFC8DD;
+    height: 4000px;
+}
+
+
+@media screen and (max-width: 400px) {
+    :root {
+        font-size: 16px;
+    }
+}
+
+/* mobile */
+@media screen and (min-width: 400px){
+    :root {
+        font-size: 20px;
+    }
+}
+
+/* mid-large mobile devices */
+@media screen and (min-width: 600px) {
+    :root {
+        font-size: 24px;
+    }
+}
+
+/* web devices */
+@media screen and (min-width: 719px) {
+    :root {
+        font-size: 28px;
+    }
+}
+
+
+.navContainer {
+    height: 2.5rem;
+    padding: 1.125rem;
+    background: #BDE0FE;
+    border: 1px solid #000;
+
+    display: flex;
+
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.navName {
+    color: #BDE0FE;
+    text-shadow: -2px 2px 1px #000;
+    font-size: 2.32575rem;
+    letter-spacing: 0.30231rem;
+
+    width: auto;
+    height: auto;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navAboutMe {
+    border: 1px solid #000;
+    background: #FDFD96;
+    color: #F3859F;
+    font-size: 1.18869rem;
+    text-decoration: none;
+
+    height: 2.32575rem;
+    width: 5rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* injected into HTML with JS to make sticky navbar */
+.sticky {
+    position: sticky;
+    width: auto;
+    top: 0;
+}
