@@ -18,11 +18,29 @@ body {
     :root {
         font-size: 12px;
     }
+
+    .smileyFace {
+        width: 0;
+        height: 0;
+    }
+
+    .introductionContainer {
+        grid-template-columns: 9fr 1fr;
+    }
 }
 
 @media screen and (min-width: 250px) {
     :root {
         font-size: 16px;
+    }
+
+    .smileyFace {
+        width: 0;
+        height: 0;
+    }
+
+    .introductionContainer {
+        grid-template-columns: 9fr 1fr;
     }
 }
 
@@ -31,6 +49,15 @@ body {
     :root {
         font-size: 20px;
     }
+
+    .smileyFace {
+        width: 30vw;
+        height: 30vw;
+    }
+
+    .introductionContainer {
+        grid-template-columns: 5fr 4fr;
+    }
 }
 
 /* mid-large mobile devices */
@@ -38,12 +65,30 @@ body {
     :root {
         font-size: 24px;
     }
+
+    .smileyFace {
+        width: 30vw;
+        height: 30vw;
+    }
+
+    .introductionContainer {
+        grid-template-columns: 5fr 4fr;
+    }
 }
 
 /* web devices */
 @media screen and (min-width: 719px) {
     :root {
         font-size: 28px;
+    }
+
+    .smileyFace {
+        width: 30vw;
+        height: 30vw;
+    }
+
+    .introductionContainer {
+        grid-template-columns: 5fr 4fr;
     }
 }
 
@@ -58,7 +103,7 @@ body {
 
     align-items: center;
     justify-content: space-between;
-
+    z-index: 100;
 }
 
 .navName {
@@ -102,14 +147,15 @@ body {
     border-right: 0.06rem solid #000;
     border-bottom: 0.06rem solid #000;
     border-left: 0.06rem solid #000;
+
+    display: grid;
 }
 
 .introTextContainer {
     display: flex;
     flex-direction: column;
-    width: 70%;
 
-    padding: 3rem 0 31vh 1.44rem;
+    padding: 3rem 0 10vh 1.44rem;
     color: #000;
 }
 
@@ -124,4 +170,17 @@ body {
 
 .introSubText {
     font-size: 1.5rem;
+}
+
+@keyframes spinningSmiley {
+    from{ transform: rotate(-360deg); }
+    to{ transform: rotate(360deg); }
+}
+
+.smileyFace {
+    z-index: 0;
+    align-self: center;
+    justify-self: center;
+    margin: 1rem 0 1rem 0;
+    animation: spinningSmiley 7s infinite linear;
 }
