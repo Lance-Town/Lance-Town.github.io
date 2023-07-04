@@ -186,7 +186,7 @@ body {
 }
 
 
-.projectContainer {
+#projectContainer {
     background: transparent;
     border-right: 0.06rem solid #000;
     border-bottom: 0.06rem solid #000;
@@ -198,10 +198,19 @@ body {
     flex-direction: column;
 }
 
-.projectTitle {
+#projectTitle {
     font-size: 3.75rem;
 }
 
-.projectSubTitle {
+#projectSubTitle {
     font-size: 1.5rem;
+}
+
+.hidden {
+    opacity: 0;
+    transition: opacity 1.5s ease, transform 1.5s ease;
+}
+
+.show {
+    opacity: 1;
 }
