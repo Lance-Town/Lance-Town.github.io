@@ -20,7 +20,7 @@
             </a>
         </nav>
 
-        <div class="introductionContainer">
+        <div id="introductionContainer">
             <div class="introTextContainer">
                 <span class="introTextOne">
                     Hi I'm
@@ -137,15 +137,15 @@
         </div>
 
         <div id="languagesContainer">
-            <div id="languagesTitleSection">
+            <div id="languagesTitleSection" class="hidden">
                 <span id="languagesTitle">Languages.</span>
                 <span id="languagesSubTitle">The good and bad</span>
             </div>
 
-            <div id="gridContainer" style="background: #A2D2FF;">
-                <span id="projectsContainerTitles">Proficient.</span>
+            <div id="gridContainer" style="background: #A2D2FF;" class="hidden">
+                <span id="projectsContainerTitles" class="hidden">Proficient.</span>
 
-                <div id="projectTags">
+                <div id="projectTags" class="hidden">
                     <span id="tag" style="background: #84C4FF;">HTML</span>
                     <span id="tag" style="background: #84C4FF;">CSS</span>
                     <span id="tag" style="background: #84C4FF;">C++</span>
@@ -154,15 +154,29 @@
                 </div>
             </div>
 
-            <div id="gridContainer" style="background: #F57EFF;">
-                <span id="projectsContainerTitles">Familiar.</span>
+            <div id="gridContainer" style="background: #F57EFF;" class="hidden">
+                <span id="projectsContainerTitles" class="hidden">Familiar.</span>
 
-                <div id="projectTags">
+                <div id="projectTags" class="class="hidden"">
                     <span id="tag" style="background: #F36BFF;">Swift</span>
                     <span id="tag" style="background: #F36BFF;">JavaScript</span>
                     <span id="tag" style="background: #F36BFF;">C</span>
                 </div>
             </div>
+        </div>
+
+        <div id="contactContainer">
+            <span id="projectsContainerTitles" class="hidden">Contact.</span>
+
+            <div id="emailContact" class="hidden">
+                <img src="Images/mailIcon.png" alt="" id="emailIcon">
+
+                lancetownsend.dev@gmail.com
+            </div>
+
+            <button onclick="scrollToElement()" id="scrollBtn" title="scroll to top" class="hidden">
+                <img src="Images/arrow1.svg" alt="arrow up" id="scrollUp">
+            </button>
         </div>
         
         <script src="script.js" async defer></script>
