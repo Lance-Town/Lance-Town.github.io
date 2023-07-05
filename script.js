@@ -5,8 +5,6 @@ function initStickyNavBar() {
   window.addEventListener("scroll", () => {
     if (document.documentElement.scrollTop >= sticky) {    
       navbar.classList.add("sticky");
-    } else {
-      navbar.classList.remove("sticky");    
     }
   });
 }
