@@ -30,7 +30,7 @@ function scrollToElement(myElement = "#introductionContainer", scrollDuration = 
   if (elementExists && elementExists.getBoundingClientRect) {
       const rect = elementExists.getBoundingClientRect();
       const elementTop = rect.top + window.scrollY - 200; // a bit of space from top
-      var cosParameter = (window.scrollY - elementTop) / 2,
+      let cosParameter = (window.scrollY - elementTop) / 2,
           scrollCount = 0,
           oldTimestamp = performance.now();
       function step(newTimestamp) {
@@ -50,3 +50,10 @@ function scrollToElement(myElement = "#introductionContainer", scrollDuration = 
 
 initStickyNavBar();
 animateElements();
+addEventListener('resize', (event) => {
+  const projectTicker = document.getElementById('projectTicker');
+
+  projectTicker.style.animation = 'none';
+  projectTicker.offsetHeight;
+  projectTicker.style.animation = 'ticker 10s linear infinite'
+})
