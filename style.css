@@ -198,21 +198,6 @@ a:visited {
     justify-content: center;
 }
 
-.navAboutMe {
-    border: 0.06rem solid #000;
-    background: #FDFD96;
-    color: #F3859F;
-    font-size: 1.18869rem;
-    text-decoration: none;
-
-    height: 2.32575rem;
-    width: 5rem;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 /* injected into HTML with JS to make sticky navbar */
 .sticky {
     position: sticky;
