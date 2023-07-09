@@ -9,6 +9,7 @@ function initStickyNavBar() {
   });
 }
 
+// nice hidden to view scrolling animation 
 function animateElements() {
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
@@ -27,6 +28,7 @@ function animateElements() {
 // smooth scrolling to any element, defaults to the top
 function scrollToElement(myElement = "#introductionContainer", scrollDuration = 500) {
   const elementExists = document.querySelector(myElement);
+
   if (elementExists && elementExists.getBoundingClientRect) {
       const rect = elementExists.getBoundingClientRect();
       const elementTop = rect.top + window.scrollY - 200; // a bit of space from top
@@ -62,7 +64,11 @@ addEventListener('resize', (event) => {
 
   const projectTicker = document.getElementById('projectTicker');
 
+  // reset the animation
   projectTicker.style.animation = 'none';
   projectTicker.offsetHeight;
   projectTicker.style.animation = 'ticker 10s linear infinite'
+
+  // set new window width
+  windowWidth = window.innerWidth
 })
