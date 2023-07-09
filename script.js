@@ -50,7 +50,16 @@ function scrollToElement(myElement = "#introductionContainer", scrollDuration = 
 
 initStickyNavBar();
 animateElements();
+
+// track the width of the window
+let windowWidth = window.innerWidth;
 addEventListener('resize', (event) => {
+  // check if the width has resized or not
+  if (windowWidth === window.innerWidth) {
+  // width has not
+    return;
+  }
+
   const projectTicker = document.getElementById('projectTicker');
 
   projectTicker.style.animation = 'none';
