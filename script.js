@@ -1,15 +1,4 @@
-function initStickyNavBar() {
-  // Get the navbar
-  const navbar = document.querySelector(".navContainer");
-  const sticky = navbar.offsetTop;
-  window.addEventListener("scroll", () => {
-    if (document.documentElement.scrollTop >= sticky) {    
-      navbar.classList.add("sticky");
-    }
-  });
-}
-
-// nice hidden to view scrolling animation 
+// view scrolling animation 
 function animateElements() {
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
@@ -50,7 +39,6 @@ function scrollToElement(myElement = "#introductionContainer", scrollDuration = 
   }
 }
 
-initStickyNavBar();
 animateElements();
 
 // track the width of the window

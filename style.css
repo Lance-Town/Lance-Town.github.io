@@ -198,18 +198,9 @@ a:visited {
     justify-content: center;
 }
 
-/* injected into HTML with JS to make sticky navbar */
-.sticky {
-    position: sticky;
-    width: auto;
-    top: 0;
-}
-
 #introductionContainer {
     background-color: #FDFD96;
-    border-right: 0.06rem solid #000;
-    border-bottom: 0.06rem solid #000;
-    border-left: 0.06rem solid #000;
+    border: 0.06rem solid #000;
 
     display: grid;
 }
@@ -228,8 +219,9 @@ a:visited {
 }
 
 .introTextTwo {
-    color: #000;
     font-size: 3.75rem;
+    color: #FDFD96;
+    text-shadow: -0.15rem 0.15rem 0.2rem #000;
 }
 
 .introSubText {
@@ -251,7 +243,8 @@ a:visited {
 
 
 #projectTitleContainer {
-    background: transparent;
+    background: url(Images/stackedWaves.svg) no-repeat transparent;
+    background-size: cover;
     border-right: 0.06rem solid #000;
     border-bottom: 0.06rem solid #000;
     border-left: 0.06rem solid #000;
