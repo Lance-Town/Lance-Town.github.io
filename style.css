@@ -273,16 +273,19 @@ a:visited {
 }
 
 .githubContainer {
-    background: #FFBA35; 
+    background: url(Images/orangeWave.svg) no-repeat #FFBA35; 
+    background-size: cover;
 }
 
 .hidden {
     opacity: 0;
     transition: opacity 1.5s ease, transform 1.5s ease;
+    transform: translateX(-0.25rem);
 }
 
 .show {
     opacity: 1;
+    transform: translateX(0);
 }
 
 #projectsContainer {
@@ -356,7 +359,8 @@ a:visited {
     border-right: 0.06rem solid #000;
     border-bottom: 0.06rem solid #000;
     border-left: 0.06rem solid #000;
-    background: #FDFD96;
+    background: url(Images/blobScene.svg) no-repeat #FDFD96;
+    background-size: cover;
 
     width: auto;
 
@@ -400,7 +404,7 @@ a:visited {
 
 #projectTickerCotainer {
     margin-top: 1rem;
-    width: 100vw;
+    width: calc(100vw - 3px);
     height: 2rem;
     overflow: hidden;
 }
